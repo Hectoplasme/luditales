@@ -40,8 +40,12 @@
 .btn
     font-secondary()
     upper()
-    font-size $size-medium
+    font-size $size-regular - 0.1rem
     letter-spacing 1px
+
+    +tablet()
+        font-size $size-medium
+
 
 .logo
     font-secondary()
