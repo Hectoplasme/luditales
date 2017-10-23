@@ -31,8 +31,15 @@
             margin 2rem auto 3rem
             border-bottom $c-font dashed 2px
 
+    &__thumbnail
+        width 15rem
+        margin-bottom 2rem
+
     &__footer
         margin-top 4rem
+
+    &__column
+        margin-bottom 3rem
 
     &-open
         padding 8rem 0
@@ -50,9 +57,10 @@
     &:nth-of-type(2n +1)
         color $c-white
 
-        .btn, .rte, .heading-2, .heading-2:after
+        .btn, .rte, .heading-2, .heading-2:after, .heading-3, .text
             color $c-white
             border-color $c-white
+
 
         &:not(.banner)
             background url(/assets/images/fond-noir.jpg) no-repeat center center
@@ -62,3 +70,7 @@
         .section__icon
             background-image url(/assets/images/icons/icone-histoire.png)
             transform translate(-50%, -60%)
+
+    &--philosophy
+        .section__icon
+            background-image url(/assets/images/icons/icone-philosophie.png)

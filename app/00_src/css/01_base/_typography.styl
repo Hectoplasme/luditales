@@ -12,10 +12,11 @@
     font-size $size-large
 
 .heading-3
-    font-secondary()
-    black()
-    italic()
-    font-size $size-larger
+    font-primary()
+    upper()
+    regular()
+    margin-bottom 2rem
+    font-size $size-medium
 
 .teasing-1
     font-primary()
@@ -32,13 +33,12 @@
 .text
     font-primary()
     regular()
-    font-size $size-small
+    font-size $size-smaller
     line-height 1.6
 
     +tablet()
-        font-size $size-regular
+        font-size $size-small
         line-height 1.6
-
 
 .bold
     bold()
@@ -47,17 +47,11 @@
     font-secondary()
     upper()
     light()
-    font-size $size-regular - 0.1rem
+    font-size $size-small - 0.1rem
     letter-spacing 1px
 
     +tablet()
-        font-size $size-medium
-
-
-.logo
-    font-secondary()
-    black()
-    font-size $size-medium
+        font-size $size-regular
 
 .menu
     font-secondary()
@@ -68,7 +62,16 @@
     text-shadow 1px 1px 2px #000
 
     +tablet()
-        font-size $size-medium
+        font-size $size-regular
+
+.team__member__infos
+    font-secondary()
+    light()
+    font-size $size-regular
+    color $c-white
+
+    .surname
+        upper()
 
 .copyright
     font-primary()

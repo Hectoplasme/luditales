@@ -1,0 +1,36 @@
+.team
+    &__member
+        position relative
+
+        &__thumbnail
+            position relative
+            padding-top 125%
+            background url(/assets/images/avatars/photo-laurianne.png) no-repeat center center
+            background-size contain
+
+            &:after
+                display block
+                content ''
+                position absolute
+                top 0
+                left 0
+                width 100%
+                height 100%
+                opacity 0
+                background url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center
+                background-size contain
+                transition opacity 200ms ease
+
+        &__infos
+            position absolute
+            top 50%
+            left 50%
+            opacity 0
+            transform translate(-50%, -50%)
+            transition opacity 200ms ease
+
+        &:hover
+            cursor pointer
+
+            .team__member__thumbnail:after, .team__member__infos
+                opacity 1
