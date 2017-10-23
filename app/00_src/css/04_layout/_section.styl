@@ -1,8 +1,14 @@
 .section
     position relative
-    padding 8rem 0
-    color $c-font
-    text-align center
+    padding 0
+    transition padding 100ms ease 200ms
+
+    &__inner
+        max-height 0rem
+        color $c-font
+        text-align center
+        overflow hidden
+        transition max-height 200ms ease
 
     &__icon
         position absolute
@@ -10,9 +16,11 @@
         top 0
         width 15rem
         height 15rem
+        opacity 0
         background url(/assets/images/icons/icone-projet.png) no-repeat center center
         background-size contain
         transform translate(-50%, -50%)
+        transition opacity 200ms ease
 
     &__title
         &:after
@@ -26,9 +34,31 @@
     &__footer
         margin-top 4rem
 
+    &-open
+        padding 8rem 0
+        transition padding 100ms ease
+
+        .section__inner
+            max-height 200rem
+            transition max-height 200ms ease 100ms
+
+        .section__icon
+            opacity 1
+            transition opacity 200ms ease
+
+
     &:nth-of-type(2n +1)
         color $c-white
 
-        .btn
+        .btn, .rte, .heading-2, .heading-2:after
             color $c-white
             border-color $c-white
+
+        &:not(.banner)
+            background url(/assets/images/fond-noir.jpg) no-repeat center center
+            background-size cover
+
+    &--story
+        .section__icon
+            background-image url(/assets/images/icons/icone-histoire.png)
+            transform translate(-50%, -60%)

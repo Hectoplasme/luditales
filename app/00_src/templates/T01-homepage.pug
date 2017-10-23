@@ -8,6 +8,7 @@ block extraScripts
 block extraMarkup
 
 block content
+    // banner
     section.banner.section
         div.banner__bg
         div.container.banner__inner
@@ -18,8 +19,10 @@ block content
             div.banner__footer.choices
                 button.btn Découvrir l'entreprise
                 button.btn Découvrir le projet
+    // / banner
 
-    section.section.section--project
+    // project section
+    section.section.section--project.section-open
         div.section__icon
         div.container.section__inner
             h2.section__title.heading-2 Notre projet
@@ -27,7 +30,20 @@ block content
                 img(src="/assets/images/illus/illu800.jpg" alt="Illustration de luditales par laurianne terrier")
                 p A mi-chemin entre les jeux de rôle en ligne et les histoires interactives, LudiTales a pour ambition de vous permettre de vous plonger dans les univers dont vous rêvez, rapidement et simplement. Tous vos choix auront une conséquence sur la suite de votre histoire.
                 p Notre application web vous permettra de créer vous même des histoires passionnantes que vous pourrez partager et jouer seul ou à plusieurs. Venez développer votre créativité et dévoiler vos aventures uniques à vos amis.
-
             div.section__footer.choices
                 button.btn Découvrir notre histoire
                 button.btn Découvrir nos membres
+    // / project section
+
+    // story section
+    section.section.section--story.section-open
+        div.section__icon
+        div.container.section__inner
+            h2.section__title.heading-2 Notre histoire
+            div.section__content.rte
+                p Nous sommes une guilde d'étudiants de licence pro MMI. Tous passionnés par le numérique et l’élevage de lamantin rose au Guatelama, nous avons décidé d’étendre notre passion à travers une application dédiée aux histoires interactives. Et ce, aussi pour mettre à l’épreuve nos compétences.
+            div.section__footer.choices
+                button.btn Découvrir notre histoire
+                button.btn Découvrir nos membres
+
+    // / story section
