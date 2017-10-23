@@ -1,0 +1,5 @@
+.DS_Store
+
+app/node_modules/
+app/01_dist/
+app/npm-debug.log
