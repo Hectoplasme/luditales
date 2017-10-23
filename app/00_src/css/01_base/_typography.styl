@@ -7,8 +7,9 @@
 
 .heading-2
     font-secondary()
-    black()
-    font-size $size-super-large
+    upper()
+    regular()
+    font-size $size-large
 
 .heading-3
     font-secondary()
@@ -30,9 +31,14 @@
 
 .text
     font-primary()
-    light()
-    font-size $size-regular
-    line-height 1.8
+    regular()
+    font-size $size-small
+    line-height 1.6
+
+    +tablet()
+        font-size $size-regular
+        line-height 1.6
+
 
 .bold
     bold()
@@ -40,6 +46,7 @@
 .btn
     font-secondary()
     upper()
+    light()
     font-size $size-regular - 0.1rem
     letter-spacing 1px
 

@@ -1,5 +1,30 @@
 .section
+    position relative
+    padding 8rem 0
     color $c-font
+    text-align center
+
+    &__icon
+        position absolute
+        left 50%
+        top 0
+        width 15rem
+        height 15rem
+        background url(/assets/images/icons/icone-projet.png) no-repeat center center
+        background-size contain
+        transform translate(-50%, -50%)
+
+    &__title
+        &:after
+            display block
+            content ''
+            width 20rem
+            height 1rem
+            margin 2rem auto 3rem
+            border-bottom $c-font dashed 2px
+
+    &__footer
+        margin-top 4rem
 
     &:nth-of-type(2n +1)
         color $c-white
