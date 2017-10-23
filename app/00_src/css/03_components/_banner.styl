@@ -1,10 +1,21 @@
 .banner
+    position relative
     display flex
     align-items center
     min-height 100vh
     background url(/assets/images/illus/fond-header.jpg) no-repeat center center
     background-size cover
     text-align center
+
+    &__bg
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background-image url(/assets/images/illus/objet-sur.png), url(/assets/images/illus/objet-sous.png)
+        background-repeat no-repeat
+        background-position center center
 
     &__title
         font-size 13.5vw
