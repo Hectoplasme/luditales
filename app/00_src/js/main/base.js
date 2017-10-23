@@ -5,6 +5,7 @@ require('es6-shim');
 //import modules
 const pouet = require('../libs/pouet.js');
 const utils = require('../libs/utils.js');
+const menuToggler = require('./modules/menu-toggler.js');
 //const moduleName = require('./modules/module-name.js');
 
 (function ($, pouet, win) {
@@ -48,7 +49,7 @@ const utils = require('../libs/utils.js');
 
             initCommonModules() {
                 // Example
-                //this.pouet.conditionalLoad('.js-module-class', moduleName.initialize.bind(moduleName));
+                this.pouet.conditionalLoad('.js-menu-toggler', menuToggler.initialize.bind(menuToggler));
             },
 
             pouet: {
