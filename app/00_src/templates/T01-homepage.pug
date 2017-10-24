@@ -75,130 +75,137 @@ block content
     section.section.section--team.team.section-open
         div.section__icon
         div.container.section__inner
+            // Team right
+            div.team__right.team__cardlist
+                div#laurianne.card.card--open.js-card
+                        div.row.card__header
+                            div.column.card__header__left
+                                p.card__heading Laurianne Terrier
+                                p.card__teasing Développeuse
+                            div.column.card__header__center
+                                img.card__thumbnail(src="/assets/images/avatars/photo-laurianne-fiche.png" alt="laurianne terrier")
+                            div.column.card__header__right
+                                p.card__heading Exp
+                                p.card__teasing Expérience <br/> professionnelle
+                                div.card__gauge
+                                    div.card__gauge__inner(style="width: 40%;")
+                        div.row.card__body.is-multiline.is-mobile
+                            p.card__heading-2 Caracteristiques physiques
+                            div.column.is-6
+                                div.row.is-mobile
+                                    div.column.is-three-quarters
+                                        p.card__heading int
+                                        p.card__teasing Intelligence
+                                    div.column
+                                        p.card__heading 3
+                            div.column.is-6
+                                div.row.is-mobile
+                                    div.column.is-three-quarters
+                                        p.card__heading cha
+                                        p.card__teasing charisme
+                                    div.column
+                                        p.card__heading 4
+                            div.column.is-6
+                                div.row.is-mobile
+                                    div.column.is-three-quarters
+                                        p.card__heading sag
+                                        p.card__teasing sagesse
+                                    div.column
+                                        p.card__heading 1
+                            div.column.is-6
+                                div.row.is-mobile
+                                    div.column.is-three-quarters
+                                        p.card__heading end
+                                        p.card__teasing endurance
+                                    div.column
+                                        p.card__heading 2
+                        div.card__footer
+                            p.card__heading-2 Competences
+                            div.row.is-mobile.skill__item
+                                div.column.is-6
+                                    p.card__heading-3 Astuce
+                                div.column.is-6.skill__boxes
+                                    div.skill__box.skill__box--checked
+                                    div.skill__box.skill__box--checked
+                                    div.skill__box
+                                    div.skill__box
+                                    div.skill__box
+                            div.row.is-mobile.skill__item
+                                div.column.is-6
+                                    p.card__heading-3 Erudition
+                                div.column.is-6.skill__boxes
+                                    div.skill__box.skill__box--checked
+                                    div.skill__box.skill__box--checked
+                                    div.skill__box
+                                    div.skill__box
+                                    div.skill__box
+                            div.row.is-mobile.skill__item
+                                div.column.is-6
+                                    p.card__heading-3 Investigation
+                                div.column.is-6.skill__boxes
+                                    div.skill__box.skill__box--checked
+                                    div.skill__box.skill__box--checked
+                                    div.skill__box
+                                    div.skill__box
+                                    div.skill__box
+                            div.row.is-mobile.skill__item
+                                div.column.is-6
+                                    p.card__heading-3 Art
+                                div.column.is-6.skill__boxes
+                                    div.skill__box.skill__box--checked
+                                    div.skill__box.skill__box--checked
+                                    div.skill__box
+                                    div.skill__box
+                                    div.skill__box
+                            div.row.is-mobile.skill__item
+                                div.column.is-6
+                                    p.card__heading-3 Technologie
+                                div.column.is-6.skill__boxes
+                                    div.skill__box.skill__box--checked
+                                    div.skill__box.skill__box--checked
+                                    div.skill__box
+                                    div.skill__box
+                                    div.skill__box
+                            button.card__button.js-team-button
+                                div.bar
+                                div.bar
+                                div.bar
+            // / Team right
+            // Team left
             div.team__left
                 h2.section__title.heading-2 Notre équipe
                 div.row.is-multiline.is-mobile
-                    div.column.is-6-mobile.is-4-tablet.team__member(data-member="laurianne")
+                    div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
                         div.team__member__thumbnail
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
-                    div.column.is-6-mobile.is-4-tablet.team__member(data-member="laurianne")
+                    div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
                         div.team__member__thumbnail
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
-                    div.column.is-6-mobile.is-4-tablet.team__member(data-member="laurianne")
+                    div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
                         div.team__member__thumbnail
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
-                    div.column.is-6-mobile.is-4-tablet.team__member(data-member="laurianne")
+                    div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
                         div.team__member__thumbnail
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
-                    div.column.is-6-mobile.is-4-tablet.team__member(data-member="laurianne")
+                    div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
                         div.team__member__thumbnail
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
-                    div.column.is-6-mobile.is-4-tablet.team__member(data-member="laurianne")
+                    div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
                         div.team__member__thumbnail
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
-            div.team__right.team__cardlist
-                div#laurianne.team__card
-                    div.row.team__card__header
-                        div.column
-                            p.card__heading Laurianne Terrier
-                            p.card__teasing Développeuse
-                            img.card__thumbnail(src="/assets/images/avatars/photo-laurianne-fiche.png" alt="laurianne terrier")
-                            p.card__heading Exp
-                            p.card__teasing Expérience professionnelle
-                            div.card__gauge
-                                div.card__gauge__inner(style="width: 40%;")
-                    div.row.team__card__body.is-multiline.is-mobile
-                        p.card__heading-2 Caracteristiques physiques
-                        div.column.is-6
-                            div.row.is-mobile
-                                div.column.is-three-quarters
-                                    p.card__heading int
-                                    p.card__teasing Intelligence
-                                div.column
-                                    p.card__heading 3
-                        div.column.is-6
-                            div.row.is-mobile
-                                div.column.is-three-quarters
-                                    p.card__heading cha
-                                    p.card__teasing charisme
-                                div.column
-                                    p.card__heading 4
-                        div.column.is-6
-                            div.row.is-mobile
-                                div.column.is-three-quarters
-                                    p.card__heading sag
-                                    p.card__teasing sagesse
-                                div.column
-                                    p.card__heading 1
-                        div.column.is-6
-                            div.row.is-mobile
-                                div.column.is-three-quarters
-                                    p.card__heading end
-                                    p.card__teasing endurance
-                                div.column
-                                    p.card__heading 2
-                    div.team__card__footer
-                        p.card__heading-2 Competences
-                        div.row.is-mobile.skill__item
-                            div.column.is-6
-                                p.card__heading-3 Astuce
-                            div.column.is-6.skill__boxes
-                                div.skill__box--checked
-                                div.skill__box--checked
-                                div.skill__box
-                                div.skill__box
-                                div.skill__box
-                        div.row.is-mobile.skill__item
-                            div.column.is-6
-                                p.card__heading-3 Erudition
-                            div.column.is-6.skill__boxes
-                                div.skill__box--checked
-                                div.skill__box--checked
-                                div.skill__box
-                                div.skill__box
-                                div.skill__box
-                        div.row.is-mobile.skill__item
-                            div.column.is-6
-                                p.card__heading-3 Investigation
-                            div.column.is-6.skill__boxes
-                                div.skill__box--checked
-                                div.skill__box--checked
-                                div.skill__box
-                                div.skill__box
-                                div.skill__box
-                        div.row.is-mobile.skill__item
-                            div.column.is-6
-                                p.card__heading-3 Art
-                            div.column.is-6.skill__boxes
-                                div.skill__box--checked
-                                div.skill__box--checked
-                                div.skill__box
-                                div.skill__box
-                                div.skill__box
-                        div.row.is-mobile.skill__item
-                            div.column.is-6
-                                p.card__heading-3 Technologie
-                            div.column.is-6.skill__boxes
-                                div.skill__box--checked
-                                div.skill__box--checked
-                                div.skill__box
-                                div.skill__box
-                                div.skill__box
-                        button.team__card__button
-                            div.bar
-                            div.bar
             div.section__footer.choices
                 button.btn Et pour finir...
+            // / Team left
     // / philosophy section
