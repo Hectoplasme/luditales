@@ -1,6 +1,5 @@
 const menuToggler = {
         initialize() {
-            console.log('pouet','it works !');
             this.bindUI();
             this.setProperties();
             this.bindEvents();

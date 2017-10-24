@@ -7,6 +7,7 @@
             padding-top 115%
             background url(/assets/images/avatars/photo-laurianne.png) no-repeat center center
             background-size contain
+            pointer-events none
 
             &:after
                 display block
@@ -20,6 +21,7 @@
                 background url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center
                 background-size contain
                 transition opacity 200ms ease
+                pointer-events none
 
         &__infos
             position absolute
@@ -28,6 +30,7 @@
             opacity 0
             transform translate(-50%, -50%)
             transition opacity 200ms ease
+            pointer-events none
 
         &:hover
             cursor pointer
@@ -40,19 +43,32 @@
         text-align center
 
         .card
-            max-height 0
-            overflow hidden
-            transition max-height 200ms ease
+            position fixed
+            z-index 20
+            top 0
+            left 100vw
+            width 100vw
+            height 100vh
+            background url(/assets/images/fond-noir.jpg) no-repeat center center
+            background-size cover
+            transition left 200ms ease
 
-            &--open
-                max-height 200rem
-                transition max-height 200ms ease
+            &__inner
+                height 100vh
+                display flex
+                flex-direction column
+                justify-content space-around
+
+            &-open
+                left 0
+                transition left 200ms ease
+
 
             &__heading-2
                 display block
                 width 80%
                 position relative
-                margin 4rem 0 2rem 10%
+                margin 1rem 0 1rem 10%
                 padding 1rem 0
                 background $c-white
                 color $c-font
@@ -78,7 +94,7 @@
                     border-left: 1.5rem solid $c-white;
                     border-top: 1.9rem solid transparent;
                     border-bottom: 1.9rem solid transparent;
-                    
+
             &__thumbnail
                 max-width 17rem
 
@@ -94,16 +110,24 @@
                     left 0
                     height 100%
                     background $c-white
+
             &__header
+                padding-top 2rem
                 &__left
-                    margin 0 0 2rem
+                    //margin 0 0 2rem
+                &__right
+                    display none
+
+                &__center
+                    display none
+
             &__footer
-                margin-bottom 6rem
+                //margin-bottom 6rem
                 .card__heading-3
                     text-align left
 
             &__button
-                padding 2rem
+                padding 1rem
                 background transparent
                 border none
 
@@ -125,12 +149,15 @@
                     &:nth-of-type(3)
                         transform-origin bottom left
                         transform rotate(-42.5deg) scaleX(1.28)
-        .skill__box
-            display inline-block
-            height 1.8rem
-            width 1.8rem
-            margin-right 0.1rem
-            border $c-white solid 2px
+        .skill
+            &__item
+                margin-bottom 0
+            &__box
+                display inline-block
+                height 1.8rem
+                width 1.8rem
+                margin-right 0.1rem
+                border $c-white solid 2px
 
-            &--checked
-                background $c-white
+                &--checked
+                    background $c-white

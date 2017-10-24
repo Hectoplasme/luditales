@@ -76,8 +76,9 @@ block content
         div.section__icon
         div.container.section__inner
             // Team right
-            div.team__right.team__cardlist
-                div#laurianne.card.card--open.js-card
+            div.team__right.team__cardlist.js-cardlist
+                div#laurianne.card.js-card
+                    div.container.card__inner
                         div.row.card__header
                             div.column.card__header__left
                                 p.card__heading Laurianne Terrier
@@ -166,10 +167,12 @@ block content
                                     div.skill__box
                                     div.skill__box
                                     div.skill__box
-                            button.card__button.js-team-button
+                            button.card__button.js-card-close
                                 div.bar
                                 div.bar
                                 div.bar
+
+
             // / Team right
             // Team left
             div.team__left
@@ -180,7 +183,7 @@ block content
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
-                    div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
+                    div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="ines")
                         div.team__member__thumbnail
                         div.team__member__infos
                             p.name laurianne
