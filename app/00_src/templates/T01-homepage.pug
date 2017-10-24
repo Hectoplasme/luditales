@@ -9,7 +9,7 @@ block extraMarkup
 
 block content
     // banner
-    section.banner.section
+    section#accueil.banner.section
         div.banner__bg
         div.container.banner__inner
             div.banner__header
@@ -22,7 +22,7 @@ block content
     // / banner
 
     // project section
-    section.section.section--project.section-open
+    section#projet.section.section--project.section-open
         div.section__icon
         div.container.section__inner
             h2.section__title.heading-2 Notre projet
@@ -36,7 +36,7 @@ block content
     // / project section
 
     // story section
-    section.section.section--story.section-open
+    section#histoire.section.section--story.section-open
         div.section__icon
         div.container.section__inner
             h2.section__title.heading-2 Notre histoire
@@ -49,7 +49,7 @@ block content
 
 
     // philosophy section
-    section.section.section--philosophy.section-open
+    section#philosophie.section.section--philosophy.section-open
         div.section__icon
         div.container.section__inner
             h2.section__title.heading-2 Notre philosophie
@@ -71,7 +71,7 @@ block content
     // / philosophy section
 
     // Team section
-    section.section.section--team.team.section-open
+    section#equipe.section.section--team.team.section-open
         div.section__icon
         div.container.section__inner
             // Team right
@@ -176,32 +176,38 @@ block content
                 h2.section__title.heading-2 Notre équipe
                 div.row.is-multiline.is-mobile
                     div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
-                        div.team__member__thumbnail
-                        div.team__member__infos
-                            p.name laurianne
-                            p.surname Terrier
-                    div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="ines")
-                        div.team__member__thumbnail
+                        div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
                     div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
-                        div.team__member__thumbnail
+                        div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
                     div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
-                        div.team__member__thumbnail
+                        div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
                     div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
-                        div.team__member__thumbnail
+                        div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
                     div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
-                        div.team__member__thumbnail
+                        div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
+                        div.team__member__infos
+                            p.name laurianne
+                            p.surname Terrier
+                    div.column.is-6-mobile.is-4-tablet.team__member.js-team-member(data-member="laurianne")
+                        div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
                         div.team__member__infos
                             p.name laurianne
                             p.surname Terrier
@@ -211,7 +217,7 @@ block content
     // / Team section
 
     // Contact section
-    section.section.section--contact.section-open
+    section#contact.section.section--contact.section-open
         div.section__icon
         div.container.section__inner
             h2.section__title.heading-2 cela vous intéresse?

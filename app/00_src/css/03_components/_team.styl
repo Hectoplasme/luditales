@@ -1,15 +1,15 @@
 .team
     &__member
         position relative
+        max-width 15rem
+        margin auto
 
         &__thumbnail
             position relative
             padding-top 115%
-            background url(/assets/images/avatars/photo-laurianne.png) no-repeat center center
-            background-size contain
             pointer-events none
 
-            &:after
+            &--hover
                 display block
                 content ''
                 position absolute
@@ -18,8 +18,6 @@
                 width 100%
                 height 100%
                 opacity 0
-                background url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center
-                background-size contain
                 transition opacity 200ms ease
                 pointer-events none
 
@@ -35,7 +33,7 @@
         &:hover
             cursor pointer
 
-            .team__member__thumbnail:after, .team__member__infos
+            .team__member__thumbnail--hover, .team__member__infos
                 opacity 1
 
     &__cardlist
@@ -161,3 +159,8 @@
 
                 &--checked
                     background $c-white
+
+        @media (max-height: 425px)
+            .card__footer
+                .card__heading-2, .row
+                    display none
