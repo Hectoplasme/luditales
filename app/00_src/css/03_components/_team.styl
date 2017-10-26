@@ -4,8 +4,12 @@
         max-width 15rem
         margin auto
 
+        +tablet()
+            max-width none
+
         &__thumbnail
             position relative
+            width 100%
             padding-top 115%
             pointer-events none
 
@@ -18,7 +22,7 @@
                 width 100%
                 height 100%
                 opacity 0
-                transition opacity 200ms ease
+                transition opacity 500ms ease
                 pointer-events none
 
         &__infos
@@ -27,7 +31,7 @@
             left 50%
             opacity 0
             transform translate(-50%, -50%)
-            transition opacity 200ms ease
+            transition opacity 500ms ease
             pointer-events none
 
         &:hover
@@ -57,28 +61,41 @@
                 flex-direction column
                 justify-content space-around
 
+                +tablet()
+                    justify-content center
+
+            &__container
+                width 100%
+                max-width 31rem
+                margin auto
+
             &-open
                 left 0
                 transition left 200ms ease
 
-
             &__heading-2
-                display block
-                width 80%
                 position relative
-                margin 1rem 0 1rem 10%
+                display block
+                width 86%
+                max-width 43rem
+                position relative
+                margin 1rem 0 1rem 7%
                 padding 1rem 0
-                background $c-white
-                color $c-font
+                //background $c-white
+                background $c-gradient
+                color $c-white
+
+                +tablet()
+                    margin 4rem auto
 
                 &:before
                     position absolute
                     content ''
                     display block
                     top 0
-                    left -1.5rem
+                    left -1.4rem
                     width 0
-                    border-right: 1.5rem solid $c-white;
+                    border-right: 1.5rem solid rgba(182,1,158,1);
                     border-top: 1.9rem solid transparent;
                     border-bottom: 1.9rem solid transparent;
 
@@ -87,18 +104,50 @@
                     content ''
                     display block
                     top 0
-                    right -1.5rem
+                    right -1.4rem
                     width 0
-                    border-left: 1.5rem solid $c-white;
+                    border-left: 1.5rem solid rgba(14,159,162,1);
                     border-top: 1.9rem solid transparent;
                     border-bottom: 1.9rem solid transparent;
+
+                &__border
+                    position absolute
+                    z-index -1
+                    display block
+                    top -3px
+                    bottom -3px
+                    left 0
+                    right 0
+                    background $c-white
+
+                    &:before
+                        position absolute
+                        content ''
+                        display block
+                        top -0.5px
+                        left -1.8rem
+                        width 0
+                        border-right: 1.8rem solid $c-white;
+                        border-top: 2.25rem solid transparent;
+                        border-bottom: 2.25rem solid transparent;
+
+                    &:after
+                        position absolute
+                        content ''
+                        display block
+                        top -0.5px
+                        right -1.8rem
+                        width 0
+                        border-left: 1.8rem solid $c-white;
+                        border-top: 2.25rem solid transparent;
+                        border-bottom: 2.25rem solid transparent;
 
             &__thumbnail
                 max-width 17rem
 
             &__gauge
                 position relative
-                height 1.8rem
+                height 1.5rem
                 margin-top 1.8rem
                 border $c-white solid 2px
 
@@ -112,12 +161,22 @@
             &__header
                 padding-top 2rem
                 &__left
-                    //margin 0 0 2rem
+                    +tablet()
+                        display block
+                        text-align right
+
                 &__right
                     display none
 
+                    +tablet()
+                        display block
+                        text-align left
+
                 &__center
                     display none
+
+                    +tablet()
+                        display block
 
             &__footer
                 //margin-bottom 6rem
@@ -128,6 +187,12 @@
                 padding 1rem
                 background transparent
                 border none
+
+                &:hover
+                    cursor pointer
+
+                +tablet()
+                    padding 4rem
 
                 .bar
                     width 2.2rem
@@ -152,8 +217,8 @@
                 margin-bottom 0
             &__box
                 display inline-block
-                height 1.8rem
-                width 1.8rem
+                height 1.5rem
+                width 1.5rem
                 margin-right 0.1rem
                 border $c-white solid 2px
 
@@ -164,3 +229,18 @@
             .card__footer
                 .card__heading-2, .row
                     display none
+
+        @media (max-height: 769px) and (min-width: 1023px)
+            .card__header
+                &__left
+                    text-align center
+
+                &__right
+                    display none
+
+
+                &__center
+                    display none
+
+            .card__button
+                padding 3rem

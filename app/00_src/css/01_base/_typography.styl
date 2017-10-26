@@ -50,8 +50,6 @@
     font-size $size-small - 0.1rem
     letter-spacing 1px
 
-    +tablet()
-        font-size $size-regular
 
 .menu
     font-secondary()
@@ -63,6 +61,25 @@
 
     +tablet()
         font-size $size-regular
+
+.banner
+    &__title
+        font-size 13.5vw
+
+        +tablet()
+            font-size 9rem
+
+    &__subtitle
+        font-size 7vw
+
+        +tablet()
+            font-size 4.8rem
+
+    &__teasing
+        font-size 4.9vw
+
+        +tablet()
+            font-size 3.4rem
 
 .team__member__infos
     font-secondary()
@@ -83,7 +100,7 @@
     &__heading-2
         font-secondary()
         upper()
-        bold()
+        regular()
         line-height 1.2
         font-size $size-regular - 0.5rem
 
@@ -103,8 +120,10 @@
     font-secondary()
     upper()
     light()
-    font-size $size-regular
+    font-size $size-small
     line-height 3
+
+
 
 .copyright
     font-primary()

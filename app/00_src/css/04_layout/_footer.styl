@@ -8,5 +8,43 @@
     &__menu
         color $c-white
 
+        .menu-item
+            position relative
+
+            &:before
+                content ''
+                position absolute
+                display none
+                bottom 4px
+                left 0
+                height 4px
+                width 100%
+                background $c-gradient
+
+            &:after
+                content ''
+                position absolute
+                display none
+                bottom 4px
+                left 0
+                height 4px
+                width 100%
+                background #1c1b1e
+                transform-origin left
+                transition transform 200ms ease
+
+            &:hover
+                &:after
+                    transform-origin right
+                    transform scaleX(0)
+                    transition transform 200ms ease
+
+            +tablet()
+                display inline-block
+                padding 0 0.5rem
+
+                &:before, &:after
+                    display block
+
     .copyright
         padding-top 3rem
