@@ -9,7 +9,7 @@ block extraMarkup
 
 block content
     // banner
-    section#accueil.banner.section
+    section#accueil.banner.section.section--dark
         div.banner__bg
         div.container.banner__inner
             div.banner__header
@@ -17,8 +17,8 @@ block content
                 p.banner__subtitle.teasing-1 Explorateur digital,
                 p.banner__teasing.teasing-2 Vous voilà de passage à Luditales.
             div.banner__footer.section__choices
-                button.btn Découvrir l'entreprise
-                button.btn Découvrir le projet
+                button.btn.js-choice(data-dir="histoire") Découvrir l'entreprise
+                button.btn.js-choice(data-dir="projet") Découvrir le projet
     // / banner
 
     // project section
@@ -31,8 +31,12 @@ block content
                 p A mi-chemin entre les jeux de rôle en ligne et les histoires interactives, LudiTales a pour ambition de vous permettre de vous plonger dans les univers dont vous rêvez, rapidement et simplement. Tous vos choix auront une conséquence sur la suite de votre histoire.
                 p Notre application web vous permettra de créer vous même des histoires passionnantes que vous pourrez partager et jouer seul ou à plusieurs. Venez développer votre créativité et dévoiler vos aventures uniques à vos amis.
             div.section__footer.section__choices
-                button.btn Découvrir notre histoire
-                button.btn Découvrir nos membres
+                button.btn.js-choice(data-dir="histoire") Découvrir l'entreprise
+                button.btn.js-choice(data-dir="projet") Découvrir le projet
+                button.btn.js-choice(data-dir="equipe") Découvrir nos membres
+                button.btn.js-choice(data-dir="philosophie") Découvrir notre philosophie
+                button.btn.js-choice(data-dir="contact") Et pour finir...
+
     // / project section
 
     // story section
@@ -43,8 +47,11 @@ block content
             div.section__content.rte
                 p Nous sommes une guilde d'étudiants de licence pro MMI. Tous passionnés par le numérique et l’élevage de lamantin rose au Guatelama, nous avons décidé d’étendre notre passion à travers une application dédiée aux histoires interactives. Et ce, aussi pour mettre à l’épreuve nos compétences.
             div.section__footer.section__choices
-                button.btn Découvrir notre histoire
-                button.btn Découvrir nos membres
+                button.btn.js-choice(data-dir="histoire") Découvrir l'entreprise
+                button.btn.js-choice(data-dir="projet") Découvrir le projet
+                button.btn.js-choice(data-dir="equipe") Découvrir nos membres
+                button.btn.js-choice(data-dir="philosophie") Découvrir notre philosophie
+                button.btn.js-choice(data-dir="contact") Et pour finir...
     // / story section
 
 
@@ -67,11 +74,15 @@ block content
                     h3.heading-3 Partager
                     p.text Vous souhaitez vivre une aventure incroyable avec vos amis ? Les histoires sont accessibles sur le site et jouables à plusieurs joueurs en même temps si vous le souhaitez ! Programmez des parties pour vous retrouver et rire ensemble.
             div.section__footer.section__choices
-                button.btn Découvrir nos membres
+                button.btn.js-choice(data-dir="histoire") Découvrir l'entreprise
+                button.btn.js-choice(data-dir="projet") Découvrir le projet
+                button.btn.js-choice(data-dir="equipe") Découvrir nos membres
+                button.btn.js-choice(data-dir="philosophie") Découvrir notre philosophie
+                button.btn.js-choice(data-dir="contact") Et pour finir...
     // / philosophy section
 
     // Team section
-    section#equipe.section.section--team.team.section-open
+    section#equipe.section.section--team.team
         div.section__icon
         div.container.section__inner
                 // Team left
@@ -115,7 +126,10 @@ block content
                                 p.name tais
                                 p.surname fraisse
                     div.section__footer.section__choices
-                        button.btn Et pour finir...
+                        button.btn.js-choice(data-dir="histoire") Découvrir l'entreprise
+                        button.btn.js-choice(data-dir="projet") Découvrir le projet
+                        button.btn.js-choice(data-dir="philosophie") Découvrir notre philosophie
+                        button.btn.js-choice(data-dir="contact") Et pour finir...
                 // / Team left
                 // Team right
                 div.team__right.team__cardlist.js-cardlist
@@ -707,8 +721,6 @@ block content
                                     div.bar
                                     div.bar
                                     div.bar
-
-
                 // / Team right
     // / Team section
 

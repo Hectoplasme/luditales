@@ -63,8 +63,11 @@
             transform translate(-50%, -50%)
             transition opacity 200ms ease, height 200ms ease
 
+    &__choices
+        .btn:nth-of-type(n+3)
+            display none
 
-    &:nth-of-type(2n +1)
+    &.section--dark
         color $c-white
 
         .btn, .rte, .heading-2, .heading-2:after, .heading-3, .text, .card
