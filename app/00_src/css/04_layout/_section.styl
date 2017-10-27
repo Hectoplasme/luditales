@@ -16,13 +16,13 @@
         left 50%
         top 0
         width 15rem
-        height 15rem
+        height 0
         opacity 0
         background url(/assets/images/icons/icone-projet.png) no-repeat center center
         background-size contain
+        transform-origin center
         transform translate(-50%, -50%)
-        transition opacity 200ms ease
-
+        transition opacity 200ms ease, height 200ms ease
     &__title
         &:after
             display block
@@ -59,7 +59,9 @@
 
         .section__icon
             opacity 1
-            transition opacity 200ms ease
+            height 15rem
+            transform translate(-50%, -50%)
+            transition opacity 200ms ease, height 200ms ease
 
 
     &:nth-of-type(2n +1)
