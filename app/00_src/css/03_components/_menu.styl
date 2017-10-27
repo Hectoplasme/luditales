@@ -15,11 +15,11 @@
             margin 0.5rem 0
             background-color $c-white
             border-radius 25px
-            transition transform 200ms ease-in-out, background-color 200ms ease
+            transition transform 200ms ease-in-out, background-color 100ms ease
 
-        .is--dark .bar
+        &.is-dark .bar
             background-color $c-font
-            transition transform 200ms ease-in-out, background-color 200ms ease
+            transition transform 200ms ease-in-out, background-color 100ms ease
 
     &__items
         pointer-events none
@@ -96,8 +96,8 @@
 
 .menu-item a
     color $c-white
-    transition color 200ms ease
+    transition color 100ms ease
 
     &.is-dark
         color $c-font
-        transition color 200ms ease
+        transition color 100ms ease
