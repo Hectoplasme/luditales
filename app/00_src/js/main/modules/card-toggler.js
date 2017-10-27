@@ -11,6 +11,7 @@ const cardToggler = {
 
             this.ui.currentCard  = document.querySelector('.js-card');
             this.ui.cardList  = document.querySelector('.js-cardlist');
+            this.ui.cards = this.ui.cardList.querySelectorAll('.js-card');
             this.ui.members = document.querySelectorAll('.js-team-member');
             this.ui.buttonClose = document.querySelectorAll('.js-card-close');
 
@@ -30,8 +31,10 @@ const cardToggler = {
                 el.addEventListener('click', this.close.bind(this));
                 }
             );
-
-            this.ui.currentCard.addEventListener('click', this.onClickOutside.bind(this));
+            this.ui.cards.forEach((el) => {
+                el.addEventListener('click', this.onClickOutside.bind(this));
+                }
+            );
 
         },
 
