@@ -71,7 +71,7 @@ block content
     // / philosophy section
 
     // Team section
-    section#equipe.section.section--team.team
+    section#equipe.section.section--team.team.section-open
         div.section__icon
         div.container.section__inner
                 // Team left
@@ -84,39 +84,39 @@ block content
                             div.team__member__infos
                                 p.name laurianne
                                 p.surname Terrier
-                        div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="laurianne")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
+                        div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="samantha")
+                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-samantha.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-samantha-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
-                                p.name laurianne
-                                p.surname Terrier
-                        div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="laurianne")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
+                                p.name Samantha
+                                p.surname Charpentier
+                        div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="lucas")
+                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-lucas.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-lucas-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
-                                p.name laurianne
-                                p.surname Terrier
-                        div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="laurianne")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
+                                p.name lucas
+                                p.surname alexandre
+                        div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="jimmy")
+                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-jimmy.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-jimmy-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
-                                p.name laurianne
-                                p.surname Terrier
-                        div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="laurianne")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
+                                p.name jimmy
+                                p.surname lottin
+                        div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="ines")
+                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-ines.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-ines-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
-                                p.name laurianne
-                                p.surname Terrier
-                        div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="laurianne")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
+                                p.name ines
+                                p.surname backhouche
+                        div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="tais")
+                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-tais.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-tais-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
-                                p.name laurianne
-                                p.surname Terrier
+                                p.name tais
+                                p.surname fraisse
                     div.section__footer.section__choices
                         button.btn Et pour finir...
-                    // / Team left
+                // / Team left
                 // Team right
                 div.team__right.team__cardlist.js-cardlist
                     div#laurianne.card.js-card
@@ -124,14 +124,112 @@ block content
                             div.row.card__header.is-vcentered
                                 div.column.card__header__left
                                     p.card__heading Laurianne Terrier
-                                    p.card__teasing Développeuse
+                                    p.card__teasing Directrice technique
                                 div.column.card__header__center
                                     img.card__thumbnail(src="/assets/images/avatars/photo-laurianne-fiche.png" alt="laurianne terrier")
                                 div.column.card__header__right
                                     p.card__heading Exp
                                     p.card__teasing Expérience <br/> professionnelle
                                     div.card__gauge
-                                        div.card__gauge__inner(style="width: 40%;")
+                                        div.card__gauge__inner(style="width: 60%;")
+                            di.card__body
+                                p.card__heading-2 Caracteristiques physiques
+                                    span.card__heading-2__border
+                                div.card__container.row.is-multiline.is-mobile
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading int
+                                                p.card__teasing Intelligence
+                                            div.column
+                                                p.card__heading 4
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading cha
+                                                p.card__teasing charisme
+                                            div.column
+                                                p.card__heading 1
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading sag
+                                                p.card__teasing sagesse
+                                            div.column
+                                                p.card__heading 3
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading end
+                                                p.card__teasing endurance
+                                            div.column
+                                                p.card__heading 2
+                            div.card__footer
+                                p.card__heading-2 Competences
+                                    span.card__heading-2__border
+                                div.card__container
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Astuce
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Erudition
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Investigation
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Art
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Technologie
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                button.card__button.js-card-close
+                                    div.bar
+                                    div.bar
+                                    div.bar
+                    div#samantha.card.js-card
+                        div.container.card__inner
+                            div.row.card__header.is-vcentered
+                                div.column.card__header__left
+                                    p.card__heading samantha Charpentier
+                                    p.card__teasing Cheffe de projet
+                                div.column.card__header__center
+                                    img.card__thumbnail(src="/assets/images/avatars/photo-samantha-fiche.png" alt="samantha Charpentier")
+                                div.column.card__header__right
+                                    p.card__heading Exp
+                                    p.card__teasing Expérience <br/> professionnelle
+                                    div.card__gauge
+                                        div.card__gauge__inner(style="width: 50%;")
                             di.card__body
                                 p.card__heading-2 Caracteristiques physiques
                                     span.card__heading-2__border
@@ -149,7 +247,7 @@ block content
                                                 p.card__heading cha
                                                 p.card__teasing charisme
                                             div.column
-                                                p.card__heading 4
+                                                p.card__heading 3
                                     div.column.is-half
                                         div.row.is-mobile
                                             div.column.is-three-quarters
@@ -163,7 +261,105 @@ block content
                                                 p.card__heading end
                                                 p.card__teasing endurance
                                             div.column
+                                                p.card__heading 4
+                            div.card__footer
+                                p.card__heading-2 Competences
+                                    span.card__heading-2__border
+                                div.card__container
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Astuce
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Erudition
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Investigation
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Art
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Technologie
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                button.card__button.js-card-close
+                                    div.bar
+                                    div.bar
+                                    div.bar
+                    div#lucas.card.js-card
+                        div.container.card__inner
+                            div.row.card__header.is-vcentered
+                                div.column.card__header__left
+                                    p.card__heading Lucas Alexandre
+                                    p.card__teasing Développeur
+                                div.column.card__header__center
+                                    img.card__thumbnail(src="/assets/images/avatars/photo-lucas-fiche.png" alt="Lucas Alexandre")
+                                div.column.card__header__right
+                                    p.card__heading Exp
+                                    p.card__teasing Expérience <br/> professionnelle
+                                    div.card__gauge
+                                        div.card__gauge__inner(style="width: 40%;")
+                            di.card__body
+                                p.card__heading-2 Caracteristiques physiques
+                                    span.card__heading-2__border
+                                div.card__container.row.is-multiline.is-mobile
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading int
+                                                p.card__teasing Intelligence
+                                            div.column
                                                 p.card__heading 2
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading cha
+                                                p.card__teasing charisme
+                                            div.column
+                                                p.card__heading 2
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading sag
+                                                p.card__teasing sagesse
+                                            div.column
+                                                p.card__heading 2
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading end
+                                                p.card__teasing endurance
+                                            div.column
+                                                p.card__heading 4
                             div.card__footer
                                 p.card__heading-2 Competences
                                     span.card__heading-2__border
@@ -209,6 +405,104 @@ block content
                                             p.card__heading-3 Technologie
                                         div.column.is-half.skill__boxes
                                             div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                button.card__button.js-card-close
+                                    div.bar
+                                    div.bar
+                                    div.bar
+                    div#jimmy.card.js-card
+                        div.container.card__inner
+                            div.row.card__header.is-vcentered
+                                div.column.card__header__left
+                                    p.card__heading jimmy lottin
+                                    p.card__teasing Développeur
+                                div.column.card__header__center
+                                    img.card__thumbnail(src="/assets/images/avatars/photo-jimmy-fiche.png" alt="jimmy lottin")
+                                div.column.card__header__right
+                                    p.card__heading Exp
+                                    p.card__teasing Expérience <br/> professionnelle
+                                    div.card__gauge
+                                        div.card__gauge__inner(style="width: 40%;")
+                            di.card__body
+                                p.card__heading-2 Caracteristiques physiques
+                                    span.card__heading-2__border
+                                div.card__container.row.is-multiline.is-mobile
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading int
+                                                p.card__teasing Intelligence
+                                            div.column
+                                                p.card__heading 2
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading cha
+                                                p.card__teasing charisme
+                                            div.column
+                                                p.card__heading 1
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading sag
+                                                p.card__teasing sagesse
+                                            div.column
+                                                p.card__heading 2
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading end
+                                                p.card__teasing endurance
+                                            div.column
+                                                p.card__heading 1
+                            div.card__footer
+                                p.card__heading-2 Competences
+                                    span.card__heading-2__border
+                                div.card__container
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Astuce
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Erudition
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Investigation
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Art
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Technologie
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
                                             div.skill__box.skill__box--checked
                                             div.skill__box
                                             div.skill__box
@@ -217,6 +511,204 @@ block content
                                     div.bar
                                     div.bar
                                     div.bar
+                    div#ines.card.js-card
+                        div.container.card__inner
+                            div.row.card__header.is-vcentered
+                                div.column.card__header__left
+                                    p.card__heading ines backhouche
+                                    p.card__teasing directrice artistique
+                                div.column.card__header__center
+                                    img.card__thumbnail(src="/assets/images/avatars/photo-ines-fiche.png" alt="ines backhouche")
+                                div.column.card__header__right
+                                    p.card__heading Exp
+                                    p.card__teasing Expérience <br/> professionnelle
+                                    div.card__gauge
+                                        div.card__gauge__inner(style="width: 80%;")
+                            di.card__body
+                                p.card__heading-2 Caracteristiques physiques
+                                    span.card__heading-2__border
+                                div.card__container.row.is-multiline.is-mobile
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading int
+                                                p.card__teasing Intelligence
+                                            div.column
+                                                p.card__heading 4
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading cha
+                                                p.card__teasing charisme
+                                            div.column
+                                                p.card__heading 1
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading sag
+                                                p.card__teasing sagesse
+                                            div.column
+                                                p.card__heading 2
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading end
+                                                p.card__teasing endurance
+                                            div.column
+                                                p.card__heading 2
+                            div.card__footer
+                                p.card__heading-2 Competences
+                                    span.card__heading-2__border
+                                div.card__container
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Astuce
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Erudition
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Investigation
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Art
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Technologie
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                button.card__button.js-card-close
+                                    div.bar
+                                    div.bar
+                                    div.bar
+                    div#tais.card.js-card
+                        div.container.card__inner
+                            div.row.card__header.is-vcentered
+                                div.column.card__header__left
+                                    p.card__heading tais fraisse
+                                    p.card__teasing graphiste
+                                div.column.card__header__center
+                                    img.card__thumbnail(src="/assets/images/avatars/photo-tais-fiche.png" alt="tais fraisse")
+                                div.column.card__header__right
+                                    p.card__heading Exp
+                                    p.card__teasing Expérience <br/> professionnelle
+                                    div.card__gauge
+                                        div.card__gauge__inner(style="width: 30%;")
+                            di.card__body
+                                p.card__heading-2 Caracteristiques physiques
+                                    span.card__heading-2__border
+                                div.card__container.row.is-multiline.is-mobile
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading int
+                                                p.card__teasing Intelligence
+                                            div.column
+                                                p.card__heading 3
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading cha
+                                                p.card__teasing charisme
+                                            div.column
+                                                p.card__heading 2
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading sag
+                                                p.card__teasing sagesse
+                                            div.column
+                                                p.card__heading 3
+                                    div.column.is-half
+                                        div.row.is-mobile
+                                            div.column.is-three-quarters
+                                                p.card__heading end
+                                                p.card__teasing endurance
+                                            div.column
+                                                p.card__heading 2
+                            div.card__footer
+                                p.card__heading-2 Competences
+                                    span.card__heading-2__border
+                                div.card__container
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Astuce
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Erudition
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Investigation
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Art
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                    div.row.is-mobile.skill__item
+                                        div.column.is-half
+                                            p.card__heading-3 Technologie
+                                        div.column.is-half.skill__boxes
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box.skill__box--checked
+                                            div.skill__box
+                                            div.skill__box
+                                            div.skill__box
+                                button.card__button.js-card-close
+                                    div.bar
+                                    div.bar
+                                    div.bar
+
+
                 // / Team right
     // / Team section
 

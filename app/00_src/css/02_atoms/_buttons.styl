@@ -10,7 +10,7 @@
     border $c-font solid 2px
     color $c-font
 
-    &:before
+    &:before, &.is-chosen
         content ''
         position absolute
         z-index -1
@@ -22,6 +22,9 @@
         background $c-gradient
         opacity 0
         transition opacity 500ms ease
+
+    &.is-chosen, &.is-disabled
+        pointer-events none
 
     &:hover
         cursor pointer
