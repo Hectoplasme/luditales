@@ -15,8 +15,8 @@
             margin 1rem
 
         +wide()
-            max-width 25rem
-            margin 3rem
+            max-width 22rem
+            margin 2rem
 
         &__thumbnail
             position relative
@@ -71,21 +71,60 @@
                 transition left 200ms ease
 
             +desktop()
-                top 50%
-                left 50%
-                max-width 60rem
-                max-height 95rem
-                opacity 0
-                pointer-events none
-                transform translate(-50%, -50%)
-                transition opacity 300ms ease, transform 200ms ease
+                left 100%
+                width 70rem
+
+                &:before
+                    position fixed
+                    content ''
+                    top 0
+                    left 0
+                    width 100%
+                    height 100%
+                    background #202421
+                    opacity 0
+                    pointer-events none
 
                 &-open
-                    left 50%
-                    opacity 1
-                    pointer-events auto
-                    transform translate(-50%, -52%)
-                    transition opacity 300ms ease, transform 200ms ease
+                    left calc(100vw - 70rem)
+
+                    &:before
+                        pointer-events auto
+                        opacity 0.5
+
+
+                &__inner
+                    width 70rem
+
+
+                // top 50%
+                // left 50%
+                // max-width 60rem
+                // max-height 90rem
+                // opacity 0
+                // pointer-events none
+                // transform translate(-50%, -48%)
+                // transition opacity 300ms ease, transform 200ms ease
+
+
+                // &:before
+                //     position fixed
+                //     content ''
+                //     top -50%
+                //     left -50%
+                //     width 150vw
+                //     height 150vh
+                //     background transparent
+                //     opacity 0.5
+
+
+                // &-open
+                //     left 50%
+                //     opacity 1
+                //     pointer-events auto
+                //     transform translate(-50%, -50%)
+                //     transition opacity 300ms ease, transform 200ms ease
+                //     box-shadow 0px 0px 78px -12px rgba(255,255,255,0.14)
 
             &__inner
                 height 100%
@@ -172,6 +211,9 @@
 
             &__thumbnail
                 max-width 17rem
+
+                +wide()
+                    max-width 22rem
 
             &__gauge
                 position relative

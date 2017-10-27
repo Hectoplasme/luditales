@@ -31,11 +31,19 @@ const cardToggler = {
                 }
             );
 
+            this.ui.currentCard.addEventListener('click', this.onClickOutside.bind(this));
+
         },
 
         onClick(e) {
             this.currentMember = e.target.dataset.member ?  e.target.dataset.member : this.currentMember;
             this.open(this.currentMember);
+        },
+
+        onClickOutside(e) {
+            if (e.target.classList.contains('card-open')) {
+                this.close();
+            }
         },
 
         open(id) {
