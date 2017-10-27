@@ -11,6 +11,7 @@ const choicesStory = {
             this.ui.choices = document.querySelectorAll('.js-choice');
             this.ui.currentSection  = document.querySelector('#accueil');
             this.ui.footer = document.querySelector('.footer');
+            this.ui.menu = document.querySelector('.js-menu');
         },
 
         setProperties() {
@@ -19,6 +20,7 @@ const choicesStory = {
             this.offsetTop = 0;
             this.isLastChoice = false;
             this.isEnd = false;
+            this.begin = false;
         },
 
         bindEvents() {
@@ -28,8 +30,16 @@ const choicesStory = {
         },
 
         onClick(e) {
+            if (!this.begin) {
+                this.begin = true;
+                this.disableMenu();
+            }
             this.disable(e.target);
             this.open(e.target.dataset.dir);
+        },
+
+        disableMenu(){
+            this.ui.menu.classList.add('is-hidden');
         },
 
         disable(btn) {
@@ -38,12 +48,9 @@ const choicesStory = {
         },
 
         open(section) {
-            this.currentSection = section;
-            this.openSections.push(section);
-            this.ui.currentSection = document.querySelector('#'+section);
+            this.updateSection(section);
 
             this.isEnd = this.isLastChoice ? true : false;
-
             this.cleanChoice();
 
             this.ui.currentSection.style.order = this.openSections.length;
@@ -60,6 +67,12 @@ const choicesStory = {
             if(this.isEnd) {
                 this.ui.footer.classList.add('section-open');
             }
+        },
+
+        updateSection(section) {
+                this.currentSection = section;
+                this.openSections.push(section);
+                this.ui.currentSection = document.querySelector('#'+section);
         },
 
         cleanChoice() {

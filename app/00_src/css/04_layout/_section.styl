@@ -65,6 +65,8 @@
             transition opacity 200ms ease, height 200ms ease
 
     &__choices
+        transition opacity 500ms ease
+
         .btn
             &:nth-of-type(n+3), &.is-hidden
                 display none
@@ -100,3 +102,17 @@
     &--contact
         .section__icon
             background-image url(/assets/images/icons/icone-contact.png)
+
+    &s-open
+        .section:nth-of-type(2n+1)
+            @extends .section.section--dark
+
+        .section:not(.section--contact)
+
+            &:not(.banner) .section__choices
+                height 0
+
+            .section__choices
+                opacity 0
+                pointer-events none
+                transition opacity 500ms ease

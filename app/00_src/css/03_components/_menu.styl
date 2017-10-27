@@ -13,9 +13,13 @@
             width 2.2rem
             height 0.4rem
             margin 0.5rem 0
-            background $c-white
+            background-color $c-white
             border-radius 25px
-            transition transform 200ms ease-in-out
+            transition transform 200ms ease-in-out, background-color 200ms ease
+
+        .is--dark .bar
+            background-color $c-font
+            transition transform 200ms ease-in-out, background-color 200ms ease
 
     &__items
         pointer-events none
@@ -89,3 +93,11 @@
 
                 &:nth-of-type(6)
                     transition-delay 250ms
+
+.menu-item a
+    color $c-white
+    transition color 200ms ease
+
+    &.is-dark
+        color $c-font
+        transition color 200ms ease
