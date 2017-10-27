@@ -1,6 +1,5 @@
 .btn
     position relative
-
     z-index 5
     display block
     width 100%
@@ -9,8 +8,9 @@
     background transparent
     border $c-font solid 2px
     color $c-font
+    transition opacity 500ms ease, letter-spacing 200ms ease
 
-    &:before, &.is-chosen
+    &:before
         content ''
         position absolute
         z-index -1
@@ -23,10 +23,9 @@
         opacity 0
         transition opacity 500ms ease
 
-    &.is-chosen, &.is-disabled
-        pointer-events none
-
-    &:hover
+    &:hover, &.is-chosen
+        medium()
+        letter-spacing 1px
         cursor pointer
         &:before
             opacity 1

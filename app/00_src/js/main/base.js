@@ -7,6 +7,7 @@ const pouet = require('../libs/pouet.js');
 const utils = require('../libs/utils.js');
 const menuToggler = require('./modules/menu-toggler.js');
 const cardToggler = require('./modules/card-toggler.js');
+const choicesStory = require('./modules/choices-story.js');
 //const moduleName = require('./modules/module-name.js');
 
 (function ($, pouet, win) {
@@ -23,7 +24,7 @@ const cardToggler = require('./modules/card-toggler.js');
                 } else {
                     this.initMobileOnlyModules();
                 }
-
+                window.scrollTo(0, 0);
                 this.initCommonModules();
             },
 
@@ -52,6 +53,7 @@ const cardToggler = require('./modules/card-toggler.js');
                 // Example
                 this.pouet.conditionalLoad('.js-menu-toggler', menuToggler.initialize.bind(menuToggler));
                 this.pouet.conditionalLoad('.js-team-member', cardToggler.initialize.bind(cardToggler));
+                this.pouet.conditionalLoad('.js-choice', choicesStory.initialize.bind(choicesStory));
             },
 
             pouet: {

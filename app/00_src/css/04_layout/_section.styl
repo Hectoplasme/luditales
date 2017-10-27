@@ -1,5 +1,6 @@
 .section
     position relative
+    width 100vw
     padding 0
     transition padding 100ms ease 200ms
 
@@ -64,10 +65,18 @@
             transition opacity 200ms ease, height 200ms ease
 
     &__choices
-        .btn:nth-of-type(n+3)
-            display none
+        .btn
+            &:nth-of-type(n+3), &.is-hidden
+                display none
 
-    &.section--dark
+        &.is-disabled
+            pointer-events none
+
+            .btn:not(.is-chosen)
+                opacity 0.5
+                transition opacity 500ms ease
+
+    &.section--dark, &.footer
         color $c-white
 
         .btn, .rte, .heading-2, .heading-2:after, .heading-3, .text, .card
