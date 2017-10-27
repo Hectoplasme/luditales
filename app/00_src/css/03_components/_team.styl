@@ -1,11 +1,22 @@
 .team
+    &__left__inner
+        +tablet()
+            justify-content center
+
     &__member
         position relative
         max-width 15rem
         margin auto
 
         +tablet()
-            max-width none
+            max-width 22rem
+
+        +desktop()
+            margin 1rem
+
+        +wide()
+            max-width 25rem
+            margin 3rem
 
         &__thumbnail
             position relative
@@ -55,8 +66,30 @@
             background-size cover
             transition left 200ms ease
 
+            &-open
+                left 0
+                transition left 200ms ease
+
+            +desktop()
+                top 50%
+                left 50%
+                max-width 60rem
+                max-height 95rem
+                opacity 0
+                pointer-events none
+                transform translate(-50%, -50%)
+                transition opacity 300ms ease, transform 200ms ease
+
+                &-open
+                    left 50%
+                    opacity 1
+                    pointer-events auto
+                    transform translate(-50%, -52%)
+                    transition opacity 300ms ease, transform 200ms ease
+
             &__inner
-                height 100vh
+                height 100%
+                width 100%
                 display flex
                 flex-direction column
                 justify-content space-around
@@ -69,19 +102,14 @@
                 max-width 31rem
                 margin auto
 
-            &-open
-                left 0
-                transition left 200ms ease
-
             &__heading-2
                 position relative
                 display block
                 width 86%
                 max-width 43rem
                 position relative
-                margin 1rem 0 1rem 7%
+                margin 1rem 0 2rem 7%
                 padding 1rem 0
-                //background $c-white
                 background $c-gradient
                 color $c-white
 
@@ -179,12 +207,11 @@
                         display block
 
             &__footer
-                //margin-bottom 6rem
                 .card__heading-3
                     text-align left
 
             &__button
-                padding 1rem
+                padding 0 0 2rem
                 background transparent
                 border none
 
