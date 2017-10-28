@@ -10,6 +10,7 @@ const menuGoTos = require('./modules/menu-gotos.js');
 const menuColorHandler = require('./modules/menu-color-handler.js');
 const cardToggler = require('./modules/card-toggler.js');
 const choicesStory = require('./modules/choices-story.js');
+const loader = require('./modules/loader.js');
 //const moduleName = require('./modules/module-name.js');
 
 (function ($, pouet, win) {
@@ -53,6 +54,7 @@ const choicesStory = require('./modules/choices-story.js');
 
             initCommonModules() {
                 // Example
+                this.pouet.conditionalLoad('.js-loader', loader.initialize.bind(loader));
                 this.pouet.conditionalLoad('.js-menu-toggler', menuToggler.initialize.bind(menuToggler));
                 this.pouet.conditionalLoad('.menu-item a[href^="#"]', menuGoTos.initialize.bind(menuGoTos));
                 this.pouet.conditionalLoad('.js-menu a', menuColorHandler.initialize.bind(menuColorHandler));
