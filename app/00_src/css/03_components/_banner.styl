@@ -2,6 +2,7 @@
     position relative
     display flex
     align-items center
+    overflow hidden
     min-height 100vh
     background url(/assets/images/illus/fond-header.jpg) no-repeat center center
     background-size cover
@@ -17,9 +18,21 @@
         left 0
         width 100%
         height 100%
-        background-image url(/assets/images/illus/objet-sur.png), url(/assets/images/illus/objet-sous.png)
+        background-image url(/assets/images/illus/objet-sous.png)
         background-repeat no-repeat
-        background-position center 55%
+        background-position 50% 55%
+        transition transform 50ms ease
+
+    &__fg
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background-image url(/assets/images/illus/objet-sur.png)
+        background-repeat no-repeat
+        background-position 50% 55%
+        transition transform 20ms ease
 
     &__header
         margin 15rem 0 0

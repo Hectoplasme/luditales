@@ -11,6 +11,7 @@ const menuColorHandler = require('./modules/menu-color-handler.js');
 const cardToggler = require('./modules/card-toggler.js');
 const choicesStory = require('./modules/choices-story.js');
 const loader = require('./modules/loader.js');
+const bannerParallax = require('./modules/banner-parallax.js');
 //const moduleName = require('./modules/module-name.js');
 
 (function ($, pouet, win) {
@@ -60,6 +61,7 @@ const loader = require('./modules/loader.js');
                 this.pouet.conditionalLoad('.js-menu a', menuColorHandler.initialize.bind(menuColorHandler));
                 this.pouet.conditionalLoad('.js-team-member', cardToggler.initialize.bind(cardToggler));
                 this.pouet.conditionalLoad('.js-choice', choicesStory.initialize.bind(choicesStory));
+                this.pouet.conditionalLoad('.js-banner', bannerParallax.initialize.bind(bannerParallax));
             },
 
             pouet: {

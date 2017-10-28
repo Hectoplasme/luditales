@@ -1,15 +1,15 @@
 .loader
     position absolute
     z-index 100
-    top -100vh
+    top 0
     left 0
-    bottom 0
     right 0
-    padding-top calc(50vh + 7rem)
+    padding 0
+    height 0px
     opacity 0
     background url(/assets/images/fond-noir.jpg) no-repeat center center
     background-size cover
-    transition  opacity 500ms ease 500ms, top 0s ease 1s
+    transition  opacity 500ms ease 500ms, height 0s ease 1s, padding 0s ease 1s
 
     &__text
         color $c-white
@@ -27,9 +27,10 @@
         animation loading 4s linear infinite
 
 .is-loading .loader
-    top 0vh
+    height 100vh
+    padding-top calc(50vh + 7rem)
     opacity 1
-    transition opacity 500ms ease 500ms, top 0s ease 1s
+    transition opacity 500ms ease 500ms, height 0s ease 1s, padding 0s ease 1s
 
 @keyframes loading
     0%
