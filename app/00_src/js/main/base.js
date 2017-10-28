@@ -12,7 +12,6 @@ const cardToggler = require('./modules/card-toggler.js');
 const choicesStory = require('./modules/choices-story.js');
 const loader = require('./modules/loader.js');
 const bannerParallax = require('./modules/banner-parallax.js');
-//const moduleName = require('./modules/module-name.js');
 
 (function ($, pouet, win) {
     $(function () {
@@ -43,25 +42,19 @@ const bannerParallax = require('./modules/banner-parallax.js');
             },
 
             initDesktopOnlyModules() {
-                // Example
-                //this.pouet.conditionalLoad('.js-module-class', moduleName.initialize.bind(moduleName));
-
+                this.pouet.conditionalLoad('.js-banner', bannerParallax.initialize.bind(bannerParallax));
             },
 
             initMobileOnlyModules() {
-                // Example
-                //this.pouet.conditionalLoad('.js-module-class', moduleName.initialize.bind(moduleName));
             },
 
             initCommonModules() {
-                // Example
                 this.pouet.conditionalLoad('.js-loader', loader.initialize.bind(loader));
                 this.pouet.conditionalLoad('.js-menu-toggler', menuToggler.initialize.bind(menuToggler));
                 this.pouet.conditionalLoad('.menu-item a[href^="#"]', menuGoTos.initialize.bind(menuGoTos));
                 this.pouet.conditionalLoad('.js-menu a', menuColorHandler.initialize.bind(menuColorHandler));
                 this.pouet.conditionalLoad('.js-team-member', cardToggler.initialize.bind(cardToggler));
                 this.pouet.conditionalLoad('.js-choice', choicesStory.initialize.bind(choicesStory));
-                this.pouet.conditionalLoad('.js-banner', bannerParallax.initialize.bind(bannerParallax));
             },
 
             pouet: {
