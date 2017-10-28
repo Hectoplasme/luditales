@@ -1,4 +1,3 @@
-const pouet = require('../../libs/pouet.js');
 const menuColorHandler = {
         initialize() {
             this.bindUI();
@@ -30,7 +29,6 @@ const menuColorHandler = {
 
         bindEvents() {
             window.addEventListener('scroll', this.onScroll.bind(this));
-            //this.ui.toggler.addEventListener('click', this.onClick.bind(this));
         },
 
         onScroll(e) {
@@ -45,38 +43,32 @@ const menuColorHandler = {
 
         getOffset() {
             this.sectionPositions = [];
-            this.ui.sections.forEach((el) => {
-                this.sectionPositions.push(el.getBoundingClientRect().top);
+            this.ui.sections.forEach((el,i) => {
+                this.sectionPositions.push({index: i, top: el.getBoundingClientRect().top});
             });
+            this.sectionPositions.sort((a,b) =>
+                (a.top > b.top) ? 1 : ((b.top > a.top) ? -1 : 0)
+            );
         },
 
         testColor(el, i) {
             for (var j = 0; j < this.sectionPositions.length - 1; j++) {
-                if (this.offsetLinks[i] > this.sectionPositions[j] && this.offsetLinks[i] < this.sectionPositions[j+1]) {
-                    console.log(this.ui.sections[j].style.order, 'order');
-                    if (this.ui.body.classList.contains('sections-open') && j%2 === 0 || !this.ui.body.classList.contains('sections-open') && this.ui.sections[j].style.order%2 === 0) {
-                        //console.log('dark', i);
+                if (this.offsetLinks[i] > this.sectionPositions[j].top && this.offsetLinks[i] < this.sectionPositions[j+1].top) {
+                    if (this.ui.body.classList.contains('sections-open') && j%2 === 0 || !this.ui.body.classList.contains('sections-open') && this.ui.sections[this.sectionPositions[j].index].style.order%2 === 0) {
                         if (i === 0 ) {
                             this.ui.toggler.classList.remove('is-dark');
-                        }
-                        else {
+                        } else {
                             this.ui.links[i-1].classList.remove('is-dark');
                         }
                     } else {
-                        //console.log('light', i);
                         if(i === 0) {
                             this.ui.toggler.classList.add('is-dark');
                         } else {
                             this.ui.links[i-1].classList.add('is-dark');
                         }
-
                     }
                 }
             }
-        },
-
-        close() {
-            //this.ui.menu.classList.remove('menu-open');
         }
 }
 

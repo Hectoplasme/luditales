@@ -21,7 +21,6 @@ const menuToggler = {
         },
 
         onClick(e) {
-            console.log('click');
             if (this.isOpen) {
                 this.close();
                 this.isOpen = false;

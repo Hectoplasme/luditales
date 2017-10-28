@@ -1,6 +1,5 @@
 const menuGoTos = {
         initialize() {
-            console.log('menu');
             this.bindUI();
             this.setProperties();
             this.bindEvents();
