@@ -16,7 +16,7 @@ const loader = {
         },
 
         bindEvents() {
-            $('#container').imagesLoaded( this.onImagesLoaded.bind(this));
+            $('body').imagesLoaded( this.onImagesLoaded.bind(this));
         },
 
         onImagesLoaded(e) {
