@@ -6,7 +6,7 @@
     <div class="banner__header">
       <p class="banner__title heading-1">Bienvenue</p>
       <p class="banner__subtitle teasing-1">Explorateur digital,</p>
-      <p class="banner__teasing teasing-2">Vous voilà de passage à Luditales.</p>
+      <h2 class="banner__teasing teasing-2">Vous voilà de passage à Luditales.</h2>
     </div>
     <div class="banner__footer section__choices js-choices">
       <button class="btn js-choice" data-dir="histoire">Découvrir l'entreprise</button>

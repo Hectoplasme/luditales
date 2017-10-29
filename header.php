@@ -27,7 +27,7 @@
     </div>
     <header class="header">
       <div class="header__inner container">
-        <div class="header__left"><a class="logo" href="#"></a></div>
+        <div class="header__left"><h1 class="logo" style="text-indent:9999px;">Luditales<h1></div>
         <div class="header__right menu js-menu">
           <button class="menu__toggler js-menu-toggler">
             <div class="bar"></div>
