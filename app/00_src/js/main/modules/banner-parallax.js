@@ -23,6 +23,7 @@ const bannerParallax = {
             this.positionX = 0;
             this.positionY = 0;
             this.gap = 10;
+            this.isActive = false;
         },
 
         bindEvents() {
@@ -30,6 +31,11 @@ const bannerParallax = {
         },
 
         onHover(e) {
+            if (!this.isActive) {
+                this.width = this.ui.banner.offsetWidth;
+                this.height = this.ui.banner.offsetHeight;
+                this.isActive = true;
+            }
             this.mouseX = e.screenX;
             this.mouseY = e.screenY;
 

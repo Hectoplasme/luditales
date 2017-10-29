@@ -10,8 +10,8 @@ block extraMarkup
 block content
     // banner
     section#accueil(style="order: 0;").banner.section.js-section.js-banner.section--dark
-        div.banner__bg.js-banner-bg
-        div.banner__fg.js-banner-fg
+        div.banner__bg.js-banner-bg(style='transform: translate(0px, 0px);')
+        div.banner__fg.js-banner-fg(style='transform: translate(0px, 0px);')
         div.container.banner__inner
             div.banner__header
                 p.banner__title.heading-1 Bienvenue
@@ -28,7 +28,7 @@ block content
         div.container.section__inner
             h2.section__title.heading-2 Notre projet
             div.section__content.rte
-                img(src="/assets/images/illus/illu800.jpg" alt="Illustration de luditales par laurianne terrier")
+                img(src="assets/images/illus/illu800.jpg" alt="Illustration de luditales par laurianne terrier")
                 p A mi-chemin entre les jeux de rôle en ligne et les histoires interactives, LudiTales a pour ambition de vous permettre de vous plonger dans les univers dont vous rêvez, rapidement et simplement. Tous vos choix auront une conséquence sur la suite de votre histoire.
                 p Notre application web vous permettra de créer vous même des histoires passionnantes que vous pourrez partager et jouer seul ou à plusieurs. Venez développer votre créativité et dévoiler vos aventures uniques à vos amis.
             div.section__footer.section__choices.js-choices
@@ -63,15 +63,15 @@ block content
             h2.section__title.heading-2 Notre philosophie
             div.section__content.row
                 div.column.section__column
-                    img(src="/assets/images/icons/icone-divertir.png" alt="divertir").section__thumbnail
+                    img(src="assets/images/icons/icone-divertir.png" alt="divertir").section__thumbnail
                     h3.heading-3 Divertir
                     p.text Incarnez un chasseur de mage, un valeureux guerrier, une créature de l'ombre, un zombie ou encore une voyante ! Différents personnages sont disponibles en fonction des histoires… Il vous est aussi possible de créer votre propre scénario et votre propre héros !
                 div.column.section__column
-                    img(src="/assets/images/icons/icone-simplifier.png" alt="simplifier").section__thumbnail
+                    img(src="assets/images/icons/icone-simplifier.png" alt="simplifier").section__thumbnail
                     h3.heading-3 Simplifier
                     p.text Vous n'avez pas le courage d'engager une quête contre le dragon de votre région ? D'un coup de baguette magique nous simplifions vos histoires ! Plus besoin de se soucier de lancer les dès ou de calculer des points de compétences. Nous le faisons pour vous !
                 div.column.section__column
-                    img(src="/assets/images/icons/icone-partager.png" alt="partager").section__thumbnail
+                    img(src="assets/images/icons/icone-partager.png" alt="partager").section__thumbnail
                     h3.heading-3 Partager
                     p.text Vous souhaitez vivre une aventure incroyable avec vos amis ? Les histoires sont accessibles sur le site et jouables à plusieurs joueurs en même temps si vous le souhaitez ! Programmez des parties pour vous retrouver et rire ensemble.
             div.section__footer.section__choices.js-choices
@@ -91,38 +91,38 @@ block content
                     h2.section__title.heading-2 Notre équipe
                     div.row.is-multiline.is-mobile.team__left__inner
                         div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="laurianne")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail(style="background: url(assets/images/avatars/photo-laurianne.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(assets/images/avatars/photo-laurianne-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
                                 p.name laurianne
                                 p.surname Terrier
                         div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="samantha")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-samantha.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-samantha-hover.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail(style="background: url(assets/images/avatars/photo-samantha.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(assets/images/avatars/photo-samantha-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
                                 p.name Samantha
                                 p.surname Charpentier
                         div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="lucas")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-lucas.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-lucas-hover.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail(style="background: url(assets/images/avatars/photo-lucas.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(assets/images/avatars/photo-lucas-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
                                 p.name lucas
                                 p.surname alexandre
                         div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="jimmy")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-jimmy.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-jimmy-hover.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail(style="background: url(assets/images/avatars/photo-jimmy.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(assets/images/avatars/photo-jimmy-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
                                 p.name jimmy
                                 p.surname lottin
                         div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="ines")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-ines.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-ines-hover.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail(style="background: url(assets/images/avatars/photo-ines.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(assets/images/avatars/photo-ines-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
                                 p.name ines
                                 p.surname backhouche
                         div.column.is-half-mobile.is-one-third-tablet.team__member.js-team-member(data-member="tais")
-                            div.team__member__thumbnail(style="background: url(/assets/images/avatars/photo-tais.png) no-repeat center center; background-size: contain;")
-                                div.team__member__thumbnail--hover(style="background: url(/assets/images/avatars/photo-tais-hover.png) no-repeat center center; background-size: contain;")
+                            div.team__member__thumbnail(style="background: url(assets/images/avatars/photo-tais.png) no-repeat center center; background-size: contain;")
+                                div.team__member__thumbnail--hover(style="background: url(assets/images/avatars/photo-tais-hover.png) no-repeat center center; background-size: contain;")
                             div.team__member__infos
                                 p.name tais
                                 p.surname fraisse
@@ -142,7 +142,7 @@ block content
                                     p.card__heading Laurianne Terrier
                                     p.card__teasing Directrice technique
                                 div.column.card__header__center
-                                    img.card__thumbnail(src="/assets/images/avatars/photo-laurianne-fiche.png" alt="laurianne terrier")
+                                    img.card__thumbnail(src="assets/images/avatars/photo-laurianne-fiche.png" alt="laurianne terrier")
                                 div.column.card__header__right
                                     p.card__heading Exp
                                     p.card__teasing Expérience <br/> professionnelle
@@ -240,7 +240,7 @@ block content
                                     p.card__heading samantha Charpentier
                                     p.card__teasing Cheffe de projet
                                 div.column.card__header__center
-                                    img.card__thumbnail(src="/assets/images/avatars/photo-samantha-fiche.png" alt="samantha Charpentier")
+                                    img.card__thumbnail(src="assets/images/avatars/photo-samantha-fiche.png" alt="samantha Charpentier")
                                 div.column.card__header__right
                                     p.card__heading Exp
                                     p.card__teasing Expérience <br/> professionnelle
@@ -338,7 +338,7 @@ block content
                                     p.card__heading Lucas Alexandre
                                     p.card__teasing Développeur
                                 div.column.card__header__center
-                                    img.card__thumbnail(src="/assets/images/avatars/photo-lucas-fiche.png" alt="Lucas Alexandre")
+                                    img.card__thumbnail(src="assets/images/avatars/photo-lucas-fiche.png" alt="Lucas Alexandre")
                                 div.column.card__header__right
                                     p.card__heading Exp
                                     p.card__teasing Expérience <br/> professionnelle
@@ -436,7 +436,7 @@ block content
                                     p.card__heading jimmy lottin
                                     p.card__teasing Développeur
                                 div.column.card__header__center
-                                    img.card__thumbnail(src="/assets/images/avatars/photo-jimmy-fiche.png" alt="jimmy lottin")
+                                    img.card__thumbnail(src="assets/images/avatars/photo-jimmy-fiche.png" alt="jimmy lottin")
                                 div.column.card__header__right
                                     p.card__heading Exp
                                     p.card__teasing Expérience <br/> professionnelle
@@ -534,7 +534,7 @@ block content
                                     p.card__heading ines backhouche
                                     p.card__teasing directrice artistique
                                 div.column.card__header__center
-                                    img.card__thumbnail(src="/assets/images/avatars/photo-ines-fiche.png" alt="ines backhouche")
+                                    img.card__thumbnail(src="assets/images/avatars/photo-ines-fiche.png" alt="ines backhouche")
                                 div.column.card__header__right
                                     p.card__heading Exp
                                     p.card__teasing Expérience <br/> professionnelle
@@ -632,7 +632,7 @@ block content
                                     p.card__heading tais fraisse
                                     p.card__teasing graphiste
                                 div.column.card__header__center
-                                    img.card__thumbnail(src="/assets/images/avatars/photo-tais-fiche.png" alt="tais fraisse")
+                                    img.card__thumbnail(src="assets/images/avatars/photo-tais-fiche.png" alt="tais fraisse")
                                 div.column.card__header__right
                                     p.card__heading Exp
                                     p.card__teasing Expérience <br/> professionnelle
