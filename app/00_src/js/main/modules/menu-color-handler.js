@@ -20,11 +20,6 @@ const menuColorHandler = {
             this.sectionPositions = [];
             this.offsetLinks = [];
             this.open = false;
-
-            this.offsetLinks.push(this.ui.toggler.getBoundingClientRect().top);
-            this.ui.links.forEach((el) => {
-                this.offsetLinks.push(el.getBoundingClientRect().top);
-            });
         },
 
         bindEvents() {
@@ -32,6 +27,13 @@ const menuColorHandler = {
         },
 
         onScroll(e) {
+            if (!this.open) {
+                this.open = true;
+                this.offsetLinks.push(this.ui.toggler.getBoundingClientRect().top);
+                this.ui.links.forEach((el) => {
+                    this.offsetLinks.push(el.getBoundingClientRect().top);
+                });
+            }
             if (this.ui.footer.classList.contains('section-open')) {
                 this.getOffset();
                 this.testColor(this.ui.toggler, 0);
