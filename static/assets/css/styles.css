@@ -1794,7 +1794,7 @@ button:hover {
   padding: 0;
   height: 0px;
   opacity: 0;
-  background: url("../images/fond-noir.jpg") no-repeat center center;
+  background: #151514 url("../images/fond-noir.jpg") no-repeat center center;
   background-size: cover;
   -webkit-transition: opacity 500ms ease 500ms, height 0s ease 1s, padding 0s ease 1s;
   transition: opacity 500ms ease 500ms, height 0s ease 1s, padding 0s ease 1s;
